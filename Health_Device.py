@@ -16,7 +16,7 @@ from datetime import date
 
 debug = '-v' in sys.argv
 baseUrl = "http://track.intracworks.com"
-user = { 'email' : 'admin', 'password' : 'jaihanuman4US$' }
+user = { 'email' : '', 'password' : '' }
 
 
 def login():

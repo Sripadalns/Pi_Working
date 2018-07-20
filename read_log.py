@@ -11,8 +11,8 @@ logdata_sqlerror=[]
 timestr = time.strftime("%Y%m%d")
 ssh_client = paramiko.SSHClient()
 hostname = "159.89.170.250"
-username="root"
-password="sripals$38205_$"
+username=""
+password=""
 ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 ssh_client.connect(hostname,22,username,password)
 sftp_client = ssh_client.open_sftp()
@@ -178,8 +178,8 @@ else :
       "Great !!! No Errors ",
       ])
 print msg
-username = 'info@intracworks.com'
-password = 'awesomesupport@ITW'
+username = ''
+password = ''
 server = smtplib.SMTP('smtp.gmail.com:587')
 server.ehlo()
 server.starttls()

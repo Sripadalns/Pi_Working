@@ -7,8 +7,8 @@ from Health_Device import *
 
 ssh = paramiko.SSHClient()
 hostname = "159.89.170.250"
-username="root"
-password="sripals$38205_$"
+username=""
+password=""
 command ="df -h"
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 x= ssh.connect(hostname,22,username,password)
@@ -57,8 +57,8 @@ msg = "\r\n".join([
   str(blist)
   ])
 
-username = 'info@intracworks.com'
-password = 'awesomesupport@ITW'
+username = ''
+password = ''
 
 
 server = smtplib.SMTP('smtp.gmail.com:587')

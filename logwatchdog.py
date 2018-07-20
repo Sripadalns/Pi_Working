@@ -3,7 +3,7 @@ import string
 
 ssh = paramiko.SSHClient()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-ssh.connect('159.89.170.250', username='root', password='sripals$38205_$') 
+ssh.connect('159.89.170.250', username='', password='') 
     
 ftp = ssh.open_sftp()
 file=ftp.file('/var/log/mysql/mysql_error.log', "r", -1)

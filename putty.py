@@ -4,8 +4,8 @@ import datetime
 import smtplib
 ssh = paramiko.SSHClient()
 hostname = "159.89.170.250"
-username="root"
-password="sripals$38205_$"
+username=""
+password=""
 command ="df -h"
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 x= ssh.connect(hostname,22,username,password)
@@ -27,7 +27,7 @@ text_file.write("***********************\n")
 text_file.close()
 
 
-fromaddr = 'admin@intracworks.com'
+fromaddr = 'admin@ixxx.com'
 toaddrs  = 'lnsvas@gmail.com','sripadalns@gmail.com','prabu38@gmail.com','pourni1990@gmail.com '
 msg = "\r\n".join([
   "To: lnsvas@gmail.com",
@@ -36,8 +36,8 @@ msg = "\r\n".join([
   "None should be 100%",
   str(x)
   ])
-username = 'info@intracworks.com'
-password = 'awesomesupport@ITW'
+username = 'info@xxx.com'
+password = ''
 
 
 server = smtplib.SMTP('smtp.gmail.com:587')
